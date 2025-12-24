@@ -5,12 +5,13 @@ import jobs from "../app/mockData/jobs.json";
 
 export default function Home() {
 	return (
-		<main className="min-h-screen bg-slate-50">
-			<div className="text-center mb-8 pt-10 bg-orange-400 pb-10">
-				<h1 className="text-4xl font-extrabold text-white mb-2">
+		<main className=" bg-slate-50">
+			<div className="text-center mb-8 bg-orange-400 pb-10 pt-30 rounded-b-[30px]">
+
+				<h1 className="text-5xl font-extrabold text-white mb-2">
 					Find your dream job now
 				</h1>
-				<p className="text-white">
+				<p className="text-white text-xl">
 					Browse through thousands of high-paying tech jobs
 				</p>
 				{/* The Search Component */}
