@@ -49,31 +49,34 @@ export default function CareerJobs({
                         key={job.id}
                         className="border border-neutral-300 p-5 bg-white hover:shadow-lg  "
                     >
-                        <h2 className="text-xl font-semibold text-black">
+                        <h2 className="text-xl font-semibold text-orange-500">
                             {job.title}
                         </h2>
-                        <p className="mt-1 flex items-center gap-1 text-black text-sm">
-                            <MapPin className="w-4 h-4 text-black/70" />
-                            {job.location}
+                        <p className="mt-2 flex flex-wrap items-center gap-2 text-sm">
+                            {/* Location */}
+                            <span className="flex items-center gap-1 rounded-full border border-black/20 px-3 py-1 text-black">
+                                <MapPin className="w-3.5 h-3.5 text-black/60" />
+                                {job.location}
+                            </span>
+
+                            {/* Job Type */}
+                            <span className="flex items-center gap-1 rounded-full border border-black/20 px-3 py-1 text-black">
+                                <Briefcase className="w-3.5 h-3.5 text-black/60" />
+                                {job.type}
+                            </span>
                         </p>
 
 
-<p className="flex items-center gap-1 text-sm text-neutral-800">
-  <Briefcase className="w-3.5 h-3.5 text-black/60" />
-                            {job.type}
 
-</p>
 
-                        
-
-                       <button
-  onClick={() => openModal(job)}
-  className="mt-4 flex items-center gap-1 text-black font-medium
+                        <button
+                            onClick={() => openModal(job)}
+                            className="mt-4 flex items-center gap-1 text-black font-medium
              hover:opacity-70 transition"
->
-  More details
-  <ArrowRight className="w-4 h-4 text-black/60" />
-</button>
+                        >
+                            More details
+                            <ArrowRight className="w-4 h-4 text-black/60" />
+                        </button>
                     </div>
                 ))}
             </div>

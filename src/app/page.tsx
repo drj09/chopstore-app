@@ -4,25 +4,22 @@ import jobs from "../app/mockData/jobs.json";
 
 
 export default function Home() {
-        return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-slate-50 p-40">
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-extrabold text-gray-900 mb-2">
-          Find your dream job now
-        </h1>
-        <p className="text-gray-500">
-          Browse through thousands of high-paying tech jobs
-        </p>
-      </div>
-	  
-
-      {/* The Search Component */}
-      <SearchBar />
-
-	  <main className="min-h-screen">
-      <JobListingCards jobs={jobs} />
-    </main>
-    </main>
-  );
+	return (
+		<main className="min-h-screen bg-slate-50">
+			<div className="text-center mb-8 pt-10 bg-orange-400 pb-10">
+				<h1 className="text-4xl font-extrabold text-white mb-2">
+					Find your dream job now
+				</h1>
+				<p className="text-white">
+					Browse through thousands of high-paying tech jobs
+				</p>
+				{/* The Search Component */}
+				<div className='pt-5'>
+					<SearchBar />
+				</div>
+			</div>
+			<JobListingCards jobs={jobs} />
+		</main>
+	);
 
 }
