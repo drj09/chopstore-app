@@ -24,7 +24,7 @@ type CareerJobsProps = {
 
 export default function CareerJobs({
     jobs,
-    heading = "Careers",
+    heading = "Find all job openings here",
 }: CareerJobsProps) {
     const [selectedJob, setSelectedJob] = useState<Job | null>(null);
     const [isClosing, setIsClosing] = useState(false);
@@ -44,8 +44,10 @@ export default function CareerJobs({
     };
 
     return (
-        <section className="px-6 py-12">
-            <div className="grid gap-6 max-w-6xl mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <section className="px-6 py-6 max-w-6xl mx-auto">
+            <h1 className="text-3xl font-bold text-black mb-6">{heading}</h1>
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                
                 {jobs.map((job) => (
                     <div
                         key={job.id}
