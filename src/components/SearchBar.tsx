@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, MapPin, Briefcase, ChevronDown } from 'lucide-react';
+import { Search, MapPin, ChevronDown } from 'lucide-react';
 
 export default function SearchBar() {
   return (
@@ -19,6 +19,9 @@ export default function SearchBar() {
         <div className="hidden md:block w-px h-8 bg-gray-200"></div>
 
         {/* 2. Category Dropdown */}
+
+        {/* Using relative div to position the ChevronDown icon 
+        
         <div className="relative flex-1 min-w-[140px]">
           <select className="appearance-none w-full px-4 py-3 bg-transparent focus:outline-none cursor-pointer text-gray-600 font-medium">
             <option>Category</option>
@@ -30,7 +33,7 @@ export default function SearchBar() {
 
         <div className="hidden md:block w-px h-8 bg-gray-200"></div>
 
-        {/* 3. Job Type */}
+        
         <div className="relative flex-1 min-w-[140px]">
           <Briefcase className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
           <select className="appearance-none w-full pl-9 pr-8 py-3 bg-transparent focus:outline-none cursor-pointer text-gray-600 font-medium">
@@ -42,6 +45,7 @@ export default function SearchBar() {
         </div>
 
         <div className="hidden md:block w-px h-8 bg-gray-200"></div>
+*/}
 
         {/* 4. Location */}
         <div className="relative flex-1 min-w-[140px]">

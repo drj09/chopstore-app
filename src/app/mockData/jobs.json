@@ -2,9 +2,13 @@
   {
     "id": 1,
     "title": "Frontend Developer",
+    "company": "Google",
+    "companyLogo": "https://cdn-icons-png.freepik.com/512/720/720255.png",
     "location": "Remote",
     "type": "Full Time",
-    "brief": "We are looking for a skilled Frontend Developer to build modern web applications.",
+    "salary": "₹6,00,000 - ₹12,00,000 PA",
+    "description": "We are seeking a talented Frontend Developer to join our dynamic team.",
+    "brief": "Build modern web applications using React and Next.js.",
     "requirements": [
       "Strong knowledge of React and Next.js",
       "Experience with Tailwind CSS",
@@ -19,9 +23,13 @@
   {
     "id": 2,
     "title": "Backend Engineer",
+    "company": "Microsoft",
+    "companyLogo": "https://cdn-icons-png.freepik.com/256/732/732221.png",
     "location": "India",
     "type": "Full Time",
-    "brief": "Join our backend team to design scalable APIs and services.",
+    "salary": "₹8,00,000 - ₹15,00,000 PA",
+    "description": "Design scalable backend systems and APIs.",
+    "brief": "Join our backend team to build reliable services.",
     "requirements": [
       "Experience with Node.js",
       "Knowledge of databases (SQL/NoSQL)",
@@ -29,16 +37,20 @@
     ],
     "responsibilities": [
       "Design backend architecture",
-      "Write clean, maintainable code",
-      "Ensure system reliability and security"
+      "Write maintainable code",
+      "Ensure system reliability"
     ]
   },
   {
     "id": 3,
     "title": "Full Stack Developer",
+    "company": "Confidential",
+    "companyLogo": "https://cdn-icons-png.freepik.com/512/0/747.png",
     "location": "Remote",
     "type": "Full Time",
-    "brief": "Work across frontend and backend to deliver complete product features.",
+    "salary": "Not disclosed",
+    "description": "Work across frontend and backend systems.",
+    "brief": "Deliver complete product features end to end.",
     "requirements": [
       "Experience with React and Node.js",
       "Understanding of RESTful services",
@@ -47,814 +59,73 @@
     "responsibilities": [
       "Develop end-to-end features",
       "Participate in code reviews",
-      "Collaborate with cross-functional teams"
+      "Collaborate with teams"
     ]
   },
+
   {
     "id": 4,
     "title": "UI/UX Designer",
+    "company": "Confidential",
+    "companyLogo": "https://cdn-icons-png.freepik.com/512/5968/5968705.png",
     "location": "Bangalore",
     "type": "Full Time",
-    "brief": "Design intuitive user interfaces and improve user experience.",
+    "salary": "Not disclosed",
+    "description": "Design intuitive interfaces and experiences.",
+    "brief": "Improve usability and product design.",
     "requirements": [
-      "Strong portfolio of UI/UX work",
+      "Strong UI/UX portfolio",
       "Experience with Figma or Sketch",
       "Understanding of usability principles"
     ],
     "responsibilities": [
-      "Create wireframes and prototypes",
-      "Work closely with developers",
+      "Create wireframes",
+      "Work with developers",
       "Conduct usability testing"
     ]
   },
+
   {
     "id": 5,
     "title": "Product Manager",
+    "company": "Confidential",
+    "companyLogo": "https://cdn-icons-png.freepik.com/512/3135/3135715.png",
     "location": "Remote",
     "type": "Full Time",
-    "brief": "Own product vision and execution from ideation to launch.",
+    "salary": "Not disclosed",
+    "description": "Own product vision and roadmap.",
+    "brief": "Drive product execution from ideation to launch.",
     "requirements": [
-      "Experience in product management",
+      "Product management experience",
       "Strong communication skills",
-      "Ability to prioritize features"
+      "Feature prioritization"
     ],
     "responsibilities": [
-      "Define product roadmap",
-      "Gather stakeholder requirements",
-      "Track product performance"
+      "Define roadmap",
+      "Gather requirements",
+      "Track performance"
     ]
   },
+
   {
     "id": 6,
     "title": "QA Engineer",
+    "company": "Confidential",
+    "companyLogo": "https://cdn-icons-png.freepik.com/512/3063/3063822.png",
     "location": "India",
     "type": "Full Time",
-    "brief": "Ensure product quality through manual and automated testing.",
+    "salary": "Not disclosed",
+    "description": "Ensure product quality through testing.",
+    "brief": "Manual and automated testing role.",
     "requirements": [
-      "Experience in software testing",
-      "Knowledge of test automation tools",
+      "Software testing experience",
+      "Automation tools knowledge",
       "Attention to detail"
     ],
     "responsibilities": [
       "Write test cases",
-      "Execute regression tests",
-      "Report and track bugs"
-    ]
-  },
-  {
-    "id": 7,
-    "title": "DevOps Engineer",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Maintain CI/CD pipelines and cloud infrastructure.",
-    "requirements": [
-      "Experience with AWS or Azure",
-      "Knowledge of Docker and Kubernetes",
-      "Understanding of CI/CD practices"
-    ],
-    "responsibilities": [
-      "Manage deployment pipelines",
-      "Monitor system health",
-      "Improve infrastructure reliability"
-    ]
-  },
-  {
-    "id": 8,
-    "title": "Mobile App Developer",
-    "location": "Delhi",
-    "type": "Full Time",
-    "brief": "Build and maintain mobile applications for Android and iOS.",
-    "requirements": [
-      "Experience with React Native or Flutter",
-      "Understanding of mobile UI guidelines",
-      "App store deployment experience"
-    ],
-    "responsibilities": [
-      "Develop mobile features",
-      "Fix performance issues",
-      "Collaborate with backend teams"
-    ]
-  },
-  {
-    "id": 9,
-    "title": "Technical Support Engineer",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Provide technical assistance and resolve customer issues.",
-    "requirements": [
-      "Strong troubleshooting skills",
-      "Knowledge of web technologies",
-      "Good communication skills"
-    ],
-    "responsibilities": [
-      "Investigate customer issues",
-      "Analyze logs and errors",
-      "Work with engineering teams"
-    ]
-  },
-  {
-    "id": 10,
-    "title": "Data Analyst",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Analyze data to generate actionable business insights.",
-    "requirements": [
-      "Experience with SQL",
-      "Knowledge of data visualization tools",
-      "Strong analytical thinking"
-    ],
-    "responsibilities": [
-      "Create dashboards",
-      "Analyze trends",
-      "Present findings to stakeholders"
-    ]
-  },
-
-  {
-    "id": 11,
-    "title": "Software Engineer I",
-    "location": "Pune",
-    "type": "Full Time",
-    "brief": "Entry-level software engineer role working on core features.",
-    "requirements": [
-      "Strong programming fundamentals",
-      "Knowledge of one backend language",
-      "Willingness to learn"
-    ],
-    "responsibilities": [
-      "Write clean code",
-      "Fix bugs",
-      "Participate in sprint planning"
-    ]
-  },
-  {
-    "id": 12,
-    "title": "Software Engineer II",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Mid-level engineer contributing to scalable systems.",
-    "requirements": [
-      "3+ years of development experience",
-      "System design basics",
-      "Code review experience"
-    ],
-    "responsibilities": [
-      "Implement complex features",
-      "Mentor junior engineers",
-      "Improve code quality"
-    ]
-  },
-  {
-    "id": 13,
-    "title": "Engineering Manager",
-    "location": "Bangalore",
-    "type": "Full Time",
-    "brief": "Lead engineering teams and drive delivery excellence.",
-    "requirements": [
-      "People management experience",
-      "Strong technical background",
-      "Leadership skills"
-    ],
-    "responsibilities": [
-      "Manage engineers",
-      "Plan project timelines",
-      "Ensure technical standards"
-    ]
-  },
-  {
-    "id": 14,
-    "title": "Cloud Architect",
-    "location": "Remote",
-    "type": "Contract",
-    "brief": "Design cloud-native architectures for scalable systems.",
-    "requirements": [
-      "Expertise in cloud platforms",
-      "System design experience",
-      "Security best practices knowledge"
-    ],
-    "responsibilities": [
-      "Design cloud solutions",
-      "Review architectures",
-      "Guide engineering teams"
-    ]
-  },
-  {
-    "id": 15,
-    "title": "Security Engineer",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Protect systems and data from security threats.",
-    "requirements": [
-      "Knowledge of security protocols",
-      "Experience with vulnerability assessment",
-      "Understanding of compliance standards"
-    ],
-    "responsibilities": [
-      "Conduct security audits",
-      "Monitor threats",
-      "Implement security controls"
-    ]
-  },
-
-  {
-    "id": 16,
-    "title": "SEO Specialist",
-    "location": "Remote",
-    "type": "Part Time",
-    "brief": "Improve website visibility through search optimization.",
-    "requirements": [
-      "SEO best practices knowledge",
-      "Experience with analytics tools",
-      "Content optimization skills"
-    ],
-    "responsibilities": [
-      "Optimize site content",
-      "Track SEO performance",
-      "Conduct keyword research"
-    ]
-  },
-  {
-    "id": 17,
-    "title": "Content Writer",
-    "location": "Remote",
-    "type": "Contract",
-    "brief": "Create technical and marketing content.",
-    "requirements": [
-      "Strong writing skills",
-      "Understanding of technical topics",
-      "SEO basics"
-    ],
-    "responsibilities": [
-      "Write blogs and documentation",
-      "Edit existing content",
-      "Collaborate with marketing teams"
-    ]
-  },
-  {
-    "id": 18,
-    "title": "Marketing Manager",
-    "location": "Mumbai",
-    "type": "Full Time",
-    "brief": "Lead marketing initiatives and campaigns.",
-    "requirements": [
-      "Marketing strategy experience",
-      "Campaign management skills",
-      "Analytical mindset"
-    ],
-    "responsibilities": [
-      "Plan campaigns",
-      "Manage budgets",
-      "Analyze campaign success"
-    ]
-  },
-  {
-    "id": 19,
-    "title": "HR Executive",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Support hiring and employee engagement initiatives.",
-    "requirements": [
-      "HR process knowledge",
-      "Good interpersonal skills",
-      "Recruitment experience"
-    ],
-    "responsibilities": [
-      "Coordinate interviews",
-      "Manage employee records",
-      "Support HR policies"
-    ]
-  },
-  {
-    "id": 20,
-    "title": "Recruiter",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Identify and hire top talent across teams.",
-    "requirements": [
-      "Recruitment experience",
-      "Strong communication skills",
-      "Candidate sourcing expertise"
-    ],
-    "responsibilities": [
-      "Source candidates",
-      "Conduct screenings",
-      "Coordinate hiring process"
-    ]
-  },
-
-  {
-    "id": 21,
-    "title": "Business Analyst",
-    "location": "Bangalore",
-    "type": "Full Time",
-    "brief": "Bridge business needs with technical solutions.",
-    "requirements": [
-      "Requirement gathering skills",
-      "Process analysis experience",
-      "Strong documentation skills"
-    ],
-    "responsibilities": [
-      "Analyze business needs",
-      "Create requirement documents",
-      "Support implementation"
-    ]
-  },
-  {
-    "id": 22,
-    "title": "Operations Manager",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Oversee daily operations and process improvements.",
-    "requirements": [
-      "Operations management experience",
-      "Process optimization skills",
-      "Leadership abilities"
-    ],
-    "responsibilities": [
-      "Manage operations",
-      "Improve workflows",
-      "Track performance metrics"
-    ]
-  },
-  {
-    "id": 23,
-    "title": "Site Reliability Engineer",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Ensure reliability and scalability of production systems.",
-    "requirements": [
-      "Linux and networking knowledge",
-      "Monitoring tools experience",
-      "Incident management skills"
-    ],
-    "responsibilities": [
-      "Monitor production systems",
-      "Handle incidents",
-      "Improve system uptime"
-    ]
-  },
-  {
-    "id": 24,
-    "title": "Intern – Software Engineering",
-    "location": "India",
-    "type": "Internship",
-    "brief": "Learn and contribute to real-world software projects.",
-    "requirements": [
-      "Basic programming knowledge",
-      "Problem-solving skills",
-      "Eagerness to learn"
-    ],
-    "responsibilities": [
-      "Assist senior engineers",
-      "Write simple features",
-      "Learn development workflows"
-    ]
-  },
-  {
-    "id": 25,
-    "title": "Technical Writer",
-    "location": "Remote",
-    "type": "Contract",
-    "brief": "Create clear technical documentation for products.",
-    "requirements": [
-      "Excellent writing skills",
-      "Technical background",
-      "Attention to detail"
-    ],
-    "responsibilities": [
-      "Write documentation",
-      "Maintain knowledge base",
-      "Collaborate with engineers"
-    ]
-  },
-
-  {
-    "id": 26,
-    "title": "Customer Success Manager",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Ensure customer satisfaction and product adoption.",
-    "requirements": [
-      "Customer-facing experience",
-      "Strong communication skills",
-      "Problem-solving mindset"
-    ],
-    "responsibilities": [
-      "Manage customer relationships",
-      "Drive adoption",
-      "Handle escalations"
-    ]
-  },
-  {
-    "id": 27,
-    "title": "Sales Engineer",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Support sales teams with technical expertise.",
-    "requirements": [
-      "Technical background",
-      "Presentation skills",
-      "Understanding of customer needs"
-    ],
-    "responsibilities": [
-      "Assist sales demos",
-      "Answer technical questions",
-      "Support deal closures"
-    ]
-  },
-  {
-    "id": 28,
-    "title": "AI Engineer",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Develop machine learning models and AI solutions.",
-    "requirements": [
-      "Experience with Python",
-      "Machine learning fundamentals",
-      "Data analysis skills"
-    ],
-    "responsibilities": [
-      "Build ML models",
-      "Train and evaluate algorithms",
-      "Deploy AI solutions"
-    ]
-  },
-  {
-    "id": 29,
-    "title": "Data Engineer",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Build data pipelines and data platforms.",
-    "requirements": [
-      "Experience with data pipelines",
-      "Knowledge of SQL and Python",
-      "Cloud data services knowledge"
-    ],
-    "responsibilities": [
-      "Design data pipelines",
-      "Maintain data infrastructure",
-      "Ensure data quality"
-    ]
-  },
-  {
-    "id": 30,
-    "title": "System Administrator",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Maintain IT systems and internal infrastructure.",
-    "requirements": [
-      "Linux/Windows administration",
-      "Networking basics",
-      "Troubleshooting skills"
-    ],
-    "responsibilities": [
-      "Maintain servers",
-      "Handle IT issues",
-      "Ensure system uptime"
-    ]
-  },
-
-  {
-    "id": 31,
-    "title": "IT Support Engineer",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Provide internal IT support and troubleshooting.",
-    "requirements": [
-      "Hardware and software knowledge",
-      "Good communication skills",
-      "Problem-solving abilities"
-    ],
-    "responsibilities": [
-      "Resolve IT tickets",
-      "Support employees",
-      "Maintain IT assets"
-    ]
-  },
-  {
-    "id": 32,
-    "title": "Platform Engineer",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Build and maintain internal developer platforms.",
-    "requirements": [
-      "Infrastructure experience",
-      "Automation skills",
-      "Cloud platform knowledge"
-    ],
-    "responsibilities": [
-      "Build platform tools",
-      "Improve developer experience",
-      "Maintain core systems"
-    ]
-  },
-  {
-    "id": 33,
-    "title": "Release Manager",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Coordinate software releases and deployments.",
-    "requirements": [
-      "Release management experience",
-      "CI/CD knowledge",
-      "Strong coordination skills"
-    ],
-    "responsibilities": [
-      "Plan releases",
-      "Coordinate deployments",
-      "Manage release risks"
-    ]
-  },
-  {
-    "id": 34,
-    "title": "Scrum Master",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Facilitate agile ceremonies and team productivity.",
-    "requirements": [
-      "Agile methodology knowledge",
-      "Facilitation skills",
-      "Team leadership"
-    ],
-    "responsibilities": [
-      "Run scrum ceremonies",
-      "Remove blockers",
-      "Improve team efficiency"
-    ]
-  },
-  {
-    "id": 35,
-    "title": "Technical Lead",
-    "location": "Bangalore",
-    "type": "Full Time",
-    "brief": "Lead technical decisions and mentor engineers.",
-    "requirements": [
-      "Strong system design skills",
-      "Leadership experience",
-      "Code review expertise"
-    ],
-    "responsibilities": [
-      "Guide technical direction",
-      "Mentor team members",
-      "Review critical code"
-    ]
-  },
-
-  {
-    "id": 36,
-    "title": "Game Developer",
-    "location": "Remote",
-    "type": "Contract",
-    "brief": "Develop interactive and engaging games.",
-    "requirements": [
-      "Game engine experience",
-      "Programming skills",
-      "Creative mindset"
-    ],
-    "responsibilities": [
-      "Develop gameplay mechanics",
-      "Fix bugs",
-      "Optimize performance"
-    ]
-  },
-  {
-    "id": 37,
-    "title": "AR/VR Developer",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Create immersive AR and VR experiences.",
-    "requirements": [
-      "AR/VR frameworks knowledge",
-      "3D programming experience",
-      "Creative problem-solving"
-    ],
-    "responsibilities": [
-      "Build AR/VR applications",
-      "Test immersive experiences",
-      "Collaborate with designers"
-    ]
-  },
-  {
-    "id": 38,
-    "title": "Blockchain Developer",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Develop decentralized applications and smart contracts.",
-    "requirements": [
-      "Blockchain fundamentals",
-      "Smart contract experience",
-      "Security awareness"
-    ],
-    "responsibilities": [
-      "Develop smart contracts",
-      "Review blockchain code",
-      "Ensure security best practices"
-    ]
-  },
-  {
-    "id": 39,
-    "title": "ERP Consultant",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Implement and support ERP solutions.",
-    "requirements": [
-      "ERP system experience",
-      "Business process understanding",
-      "Client communication skills"
-    ],
-    "responsibilities": [
-      "Implement ERP modules",
-      "Support clients",
-      "Train users"
-    ]
-  },
-  {
-    "id": 40,
-    "title": "Solution Architect",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Design end-to-end technical solutions for clients.",
-    "requirements": [
-      "System architecture experience",
-      "Client-facing skills",
-      "Technical leadership"
-    ],
-    "responsibilities": [
-      "Design solutions",
-      "Review architectures",
-      "Guide implementation"
-    ]
-  },
-
-  {
-    "id": 41,
-    "title": "Digital Marketing Specialist",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Execute and optimize digital marketing campaigns.",
-    "requirements": [
-      "Digital marketing tools knowledge",
-      "Analytics experience",
-      "Creative thinking"
-    ],
-    "responsibilities": [
-      "Run digital campaigns",
-      "Analyze performance",
-      "Optimize conversions"
-    ]
-  },
-  {
-    "id": 42,
-    "title": "Social Media Manager",
-    "location": "Remote",
-    "type": "Part Time",
-    "brief": "Manage brand presence on social platforms.",
-    "requirements": [
-      "Social media experience",
-      "Content planning skills",
-      "Analytics understanding"
-    ],
-    "responsibilities": [
-      "Create posts",
-      "Engage with audience",
-      "Track engagement metrics"
-    ]
-  },
-  {
-    "id": 43,
-    "title": "Finance Analyst",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Analyze financial data and support decision-making.",
-    "requirements": [
-      "Financial analysis skills",
-      "Excel proficiency",
-      "Attention to detail"
-    ],
-    "responsibilities": [
-      "Analyze financial reports",
-      "Prepare forecasts",
-      "Support budgeting"
-    ]
-  },
-  {
-    "id": 44,
-    "title": "Accountant",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Manage accounting records and compliance.",
-    "requirements": [
-      "Accounting knowledge",
-      "Compliance understanding",
-      "Accuracy and precision"
-    ],
-    "responsibilities": [
-      "Maintain accounts",
-      "Prepare reports",
-      "Ensure compliance"
-    ]
-  },
-  {
-    "id": 45,
-    "title": "Legal Counsel",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Handle legal matters and contracts.",
-    "requirements": [
-      "Legal expertise",
-      "Contract drafting skills",
-      "Regulatory knowledge"
-    ],
-    "responsibilities": [
-      "Review contracts",
-      "Advise on legal issues",
-      "Ensure compliance"
-    ]
-  },
-
-  {
-    "id": 46,
-    "title": "Compliance Officer",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Ensure regulatory and internal compliance.",
-    "requirements": [
-      "Compliance knowledge",
-      "Risk assessment skills",
-      "Attention to detail"
-    ],
-    "responsibilities": [
-      "Monitor compliance",
-      "Conduct audits",
-      "Report risks"
-    ]
-  },
-  {
-    "id": 47,
-    "title": "Training Manager",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Design and manage employee training programs.",
-    "requirements": [
-      "Training experience",
-      "Presentation skills",
-      "Program management"
-    ],
-    "responsibilities": [
-      "Develop training programs",
-      "Conduct sessions",
-      "Measure effectiveness"
-    ]
-  },
-  {
-    "id": 48,
-    "title": "Learning & Development Specialist",
-    "location": "Remote",
-    "type": "Full Time",
-    "brief": "Enhance employee skills through learning initiatives.",
-    "requirements": [
-      "L&D experience",
-      "Program design skills",
-      "Stakeholder collaboration"
-    ],
-    "responsibilities": [
-      "Design learning paths",
-      "Manage LMS",
-      "Evaluate outcomes"
-    ]
-  },
-  {
-    "id": 49,
-    "title": "Office Administrator",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Manage office operations and administration.",
-    "requirements": [
-      "Administrative skills",
-      "Organizational abilities",
-      "Communication skills"
-    ],
-    "responsibilities": [
-      "Handle office logistics",
-      "Maintain records",
-      "Support management"
-    ]
-  },
-  {
-    "id": 50,
-    "title": "Executive Assistant",
-    "location": "India",
-    "type": "Full Time",
-    "brief": "Provide administrative support to executives.",
-    "requirements": [
-      "Strong organizational skills",
-      "Discretion and confidentiality",
-      "Time management"
-    ],
-    "responsibilities": [
-      "Manage schedules",
-      "Prepare reports",
-      "Coordinate meetings"
+      "Execute tests",
+      "Track bugs"
     ]
   }
 ]
