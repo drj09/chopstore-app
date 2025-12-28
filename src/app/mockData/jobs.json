@@ -6,6 +6,7 @@
     "companyLogo": "https://cdn-icons-png.freepik.com/512/720/720255.png",
     "location": "Remote",
     "type": "Full Time",
+    "category": "Engineering",
     "salary": "₹6,00,000 - ₹12,00,000 PA",
     "description": "We are seeking a talented Frontend Developer to join our dynamic team.",
     "brief": "Build modern web applications using React and Next.js.",
@@ -22,6 +23,7 @@
   },
   {
     "id": 2,
+    "category":"Hospitality",
     "title": "Backend Engineer",
     "company": "Microsoft",
     "companyLogo": "https://cdn-icons-png.freepik.com/256/732/732221.png",
