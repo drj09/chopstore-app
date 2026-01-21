@@ -8,7 +8,30 @@ function shuffleArray<T>(array: T[]) {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
-export default function SearchAndJobs({ jobs }) {
+
+interface SearchAndJobsProps {
+  jobs: Job[];
+}
+
+
+
+interface Job {
+  id: number;
+  title: string;
+  category: string;
+  location: string;
+  type: string;
+  brief: string;
+  companyLogo: string;
+  company: string;
+  description: string;
+  salary: string;
+  requirements: string[];
+  responsibilities: string[];
+  jobTags?: string;
+}
+
+export default function SearchAndJobs({ jobs }: SearchAndJobsProps) {
   const [shuffledJobs, setShuffledJobs] = useState<typeof jobs>([]);
   const [filters, setFilters] = useState({
     title: "",
@@ -40,7 +63,7 @@ export default function SearchAndJobs({ jobs }) {
 
   return (
     <>
-      <div className="text-center mb-4 bg-orange-400 pb-10 rounded-b-[15px]">
+      <div className="text-center p-10 rounded-b-[15px]">
         <SearchBar
           categories={categories}
           locations={locations}

@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { MapPin, MoveRight, MoveLeft, Heart } from "lucide-react";
+import { MapPin, MoveRight, MoveLeft } from "lucide-react";
+import ApplyNowButton from "./applyNowButton";
 
 export type Job = {
   id: number;
   title: string;
+  category: string;
   location: string;
   type: string;
   brief: string;
@@ -15,6 +17,7 @@ export type Job = {
   salary: string;
   requirements: string[];
   responsibilities: string[];
+  jobTags?: string;
 };
 
 type CareerJobsProps = {
@@ -36,42 +39,37 @@ export default function CareerJobs({
 
   const closeModal = () => {
     setIsClosing(true);
-
     setTimeout(() => {
       setSelectedJob(null);
       setIsClosing(false);
-    }, 300); // must match animation duration
+    }, 300);
   };
 
   return (
-    <section className="px-6 py-6 max-w-6xl mx-auto">
+    <section className="px-4 py-6 max-w-6xl mx-auto">
       <h1 className="text-3xl font-bold text-black mb-6">{heading}</h1>
+
+      {/* Job cards */}
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {jobs.map((job) => (
           <div
             key={job.id}
-            className="flex flex-col bg-white justify-between border border-neutral-100 p-5 hover:shadow-lg transition rounded-lg"
+            className="flex flex-col bg-white justify-between border border-neutral-100 p-5 rounded-lg hover:shadow-lg transition"
           >
-            {/* ================= Section 1 ================= */}
-            <div className="flex items-start gap-3">
-              {/* Company Logo */}
+            {/* Top */}
+            <div className="flex gap-3">
               <img
                 src={job.companyLogo}
                 alt="company logo"
-                className="w-15 h-15 rounded-md bg-gray-100 border border-gray-100"
+                className="w-14 h-14 rounded-md bg-gray-100 border"
               />
-
               <div>
-                <h3 className="font-semibold text-xl text-black">
-                  {job.company || "Temp Holder"}
-                </h3>
-
-                <div className="mt-1 flex flex-wrap gap-2 text-xs text-gray-600">
+                <h3 className="font-semibold text-black text-xl">{job.company}</h3>
+                <div className="mt-1 flex gap-2 text-xs text-gray-600">
                   <span className="flex items-center gap-1">
                     <MapPin className="w-3 h-3" />
                     {job.location}
                   </span>
-
                   <span className="px-2 py-0.5 rounded-full bg-gray-100 border">
                     {job.type}
                   </span>
@@ -79,232 +77,126 @@ export default function CareerJobs({
               </div>
             </div>
 
-            {/* ================= Section 2 ================= */}
+            {/* Middle */}
             <div className="mt-5">
-              <h2 className="text-xl font-bold text-black">{job.title}</h2>
-
+              <h2 className="text-xl text-black font-bold">{job.title}</h2>
               <p className="mt-2 text-sm text-gray-600 line-clamp-3">
                 {job.description}
               </p>
-
               <p className="mt-4 text-lg font-semibold text-orange-500">
                 {job.salary || "₹X,XX,XXX PA"}
               </p>
             </div>
 
-            {/* ================= Section 3 ================= */}
+            {/* Bottom */}
             <div className="mt-6 flex gap-3">
-              {/* View Details Button */}
               <button
                 onClick={() => openModal(job)}
-                className="flex flex-1 font-semibold items-center justify-center gap-2 rounded-lg border border-black px-4 py-2 text-sm text-black font-medium transition hover:bg-black hover:text-white"
+                className="flex-1 flex items-center text-black justify-center gap-2 rounded-lg border border-black px-4 py-2 text-sm font-semibold hover:bg-black hover:text-white transition"
               >
                 Details
                 <MoveRight className="w-4 h-4" />
               </button>
-
-              <div className="relative group flex-1">
-                <button
-                  type="button"
-                  className="flex w-full items-center justify-center gap-2 rounded-lg bg-orange-100 px-4 py-2 text-sm font-semibold text-orange-500 transition hover:bg-orange-500 hover:text-white"
-                >
-                  Apply Now
-                  <Heart className="w-4 h-4" />
-                </button>
-
-                <div className="absolute left-0 top-full z-50 mt-2 hidden w-full rounded-lg border border-gray-200 bg-white text-black shadow-lg group-hover:block group-focus-within:block">
-                  <a
-                    href={`mailto:hr@company.com?subject=${encodeURIComponent(
-                      `Job Application: ${job.title}`
-                    )}&body=${encodeURIComponent(
-                      `Hello,
-
-I would like to apply for this job:
-
-Job ID: ${job.id}
-Company: ${job.company}
-Title: ${job.title}
-
-Please let me know the next steps.`
-                    )}`}
-                    className="block px-4 py-2 text-sm hover:bg-gray-100"
-                  >
-                    Apply by Email
-                  </a>
-                  <a
-                    href="tel:+911234567890"
-                    className="block px-4 py-2 text-sm hover:bg-gray-100"
-                  >
-                    Apply by Phone
-                  </a>
-                  <a
-                    href={`https://wa.me/918178462379?text=${encodeURIComponent(
-                      `Hello,
-
-I would like to apply for this job:
-
-Job ID: ${job.id}
-Company: ${job.company}
-Title: ${job.title}
-
-Please let me know the next steps.`
-                    )}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block px-4 py-2 text-sm hover:bg-gray-100"
-                  >
-                    Apply by WhatsApp
-                  </a>
-                </div>
-              </div>
+              <ApplyNowButton job={job} />
             </div>
           </div>
         ))}
       </div>
 
-      {/* Bottom Modal */}
-
+      {/* ================= BOTTOM MODAL ================= */}
       {selectedJob && (
         <div
-          className="fixed inset-0 z-50 flex items-end bg-black/50"
-          onClick={closeModal} // 👈 outside click
+          className="fixed inset-0 z-50 flex items-end bg-black/50 px-2"
+          onClick={closeModal}
         >
           <div
-            className={`bg-white w-full mx-2 min-h-[80vh] max-h-[85vh] rounded-t-2xl text-black overflow-y-auto
-      ${isClosing ? "animate-slideDown" : "animate-slideUp"}
-    `}
-            onClick={(e) => e.stopPropagation()} // 👈 prevent close when clicking inside
+            onClick={(e) => e.stopPropagation()}
+            className={`bg-white w-full max-h-[90vh] rounded-t-2xl overflow-y-auto
+            ${isClosing ? "animate-slideDown" : "animate-slideUp"}`}
           >
-            {/* Close button */}
-            <div className="flex justify-end mb-4 pr-10 pt-5">
+            {/* Header */}
+            <div className="sticky top-0 z-10 px-4 py-4 flex justify-between items-center bg-gray-100">
               <button
                 onClick={closeModal}
-                className="text-black text-xl hover:opacity-60 transition"
-                aria-label="Close"
+                className="flex items-center gap-2 px-2 py-2 rounded-full bg-white text-sm text-black font-medium border border-gray-300 hover:bg-gray-200 transition">
+                <MoveLeft className="w-4 h-4" />
+                All Jobs 
+              </button>
+              <button
+                onClick={closeModal}
+                className="text-sm font-semibold text-gray-500 border bg-white rounded-full px-3 py-1 border border-gray-300 hover:bg-gray-200 transition"
               >
-                X
+                ✕
               </button>
             </div>
 
-            {/* Split layout */}
-            <div className="bg-orange-50 mr-100 ml-100 p-5">
-              <div className="flex justify-start mb-4">
-                <button
-                  onClick={closeModal}
-                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-200 text-black font-medium text-sm hover:bg-gray-300 transition"
-                  aria-label="Back to all jobs"
-                  type="button"
-                >
-                  <MoveLeft className="w-4 h-4" aria-hidden="true" />
-                  <span>All Jobs</span>
-                </button>
-              </div>
-            </div>
-            <div className="bg-orange-50 mr-100 ml-100 flex flex-col md:flex-row gap-8">
-              {/* LEFT — Company Info (≈70%) */}
-              <div className="md:flex-[7] pl-6 pb-6">
-                {/* Job Title */}
-                <h2 className="text-2xl font-bold text-black">
-                  {selectedJob.title}
-                </h2>
-                <p className="mt-2 text-sm text-gray-600 line-clamp-3 mb-4">
+            {/* Content */}
+            <div className=" px-4 pb-28 pt-4 flex flex-col md:flex-row gap-6">
+              {/* Left */}
+              <div className="md:flex-[7]">
+                <h2 className="text-2xl text-black font-bold">{selectedJob.title}</h2>
+                <p className="mt-2 text-sm text-gray-600">
                   {selectedJob.description}
                 </p>
 
-                {/* Meta Tabs */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1 text-sm border border-black rounded-full">
+                <div className="flex flex-wrap gap-2 my-4 text-gray-500">
+                  <span className="px-3 py-1 text-sm border rounded-full">
                     {selectedJob.location}
                   </span>
-                  <span className="px-3 py-1 text-sm border border-black rounded-full">
+                  <span className="px-3 py-1 text-sm border rounded-full">
                     {selectedJob.type}
                   </span>
-                  <span className="px-3 py-1 text-sm border border-black rounded-full">
+                  <span className="px-3 py-1 text-sm border rounded-full">
                     {selectedJob.salary}
                   </span>
                 </div>
 
-                {/* Description */}
-                <section className="mb-6">
-                  <h3 className="text-lg font-semibold mb-2">Job Brief</h3>
-                  <p className="text-black leading-relaxed">
-                    {selectedJob.brief}
-                  </p>
+                <section className="mb-4">
+                  <h3 className="font-semibold text-black mb-1">Job Brief</h3>
+                  <p className="text-gray-500 ">{selectedJob.brief}</p>
                 </section>
 
-                {/* Requirements */}
-                <section className="mb-6">
-                  <h3 className="text-lg font-semibold mb-2">Requirements</h3>
-                  <ul className="list-disc pl-5 space-y-1">
-                    {selectedJob.requirements.map((req, i) => (
-                      <li key={i}>{req}</li>
+                <section className="mb-4">
+                  <h3 className="font-semibold text-gray-800 mb-1">Requirements</h3>
+                  <ul className="list-disc pl-5 space-y-1 text-gray-500">
+                    {selectedJob.requirements.map((r, i) => (
+                      <li key={i}>{r}</li>
                     ))}
                   </ul>
                 </section>
 
-                {/* Responsibilities */}
                 <section>
-                  <h3 className="text-lg font-semibold mb-2">
-                    Responsibilities
-                  </h3>
-                  <ul className="list-disc pl-5 space-y-1">
-                    {selectedJob.responsibilities.map((res, i) => (
-                      <li key={i}>{res}</li>
+                  <h3 className="font-semibold mb-1 text-black">Responsibilities</h3>
+                  <ul className="list-disc pl-5 space-y-1 text-gray-500">
+                    {selectedJob.responsibilities.map((r, i) => (
+                      <li key={i}>{r}</li>
                     ))}
                   </ul>
                 </section>
               </div>
 
-              {/* RIGHT — Job Details (≈30%) */}
-              <div className="md:flex-[3]">
-                <div className="w-20 h-20 bg-gray-100  rounded-lg flex items-center justify-center mb-6">
+              {/* Right */}
+              <div className="md:flex-[] order-first md:order-last flex flex-col items-center">
+                <div className="w-40 h-40 bg-white rounded-lg flex items-center justify-center">
                   <img
                     src={selectedJob.companyLogo}
                     alt={selectedJob.company}
-                    className="w-15 h-15 rounded-md bg-gray-100 border border-gray-100"
+                    className="w-30 h-30 rounded-md"
                   />
                 </div>
-
-                {/* Company Name */}
-                <h3 className="text-xl font-bold text-black mb-6">
+                <h3 className="text-lg text-black font-bold text-center pb-4">
                   {selectedJob.company}
                 </h3>
-
-                {/* Apply Button */}
-                <div className="relative group flex-1">
-                  <button
-                    type="button"
-                    className="flex w-full items-center justify-center gap-2 rounded-lg bg-black px-4 py-2 text-sm font-semibold text-white transition hover:bg-orange-500 hover:text-white"
-                  >
-                    Apply Now
-                    <Heart className="w-4 h-4" />
-                  </button>
-
-                  <div className="absolute left-0 top-full z-50 mt-2 hidden w-full rounded-lg border border-gray-200 bg-white text-black shadow-lg group-hover:block group-focus-within:block">
-                    <a
-                      href="mailto:hr@company.com"
-                      className="block px-4 py-2 text-sm hover:bg-gray-100"
-                    >
-                      Apply by Email
-                    </a>
-                    <a
-                      href="tel:+911234567890"
-                      className="block px-4 py-2 text-sm hover:bg-gray-100"
-                    >
-                      Apply by Phone
-                    </a>
-                    <a
-                      href="https://wa.me/918178462379"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block px-4 py-2 text-sm hover:bg-gray-100"
-                    >
-                      Apply by WhatsApp
-                    </a>
-                  </div>
-                </div>
+                <ApplyNowButton job={selectedJob} />
               </div>
+              
             </div>
+
+            {/* Sticky Apply Button (mobile) 
+            <div className="fixed bottom-0 left-0 right-0 md:static bg-white border-t p-4 z-20">
+              <ApplyNowButton job={selectedJob} />
+            </div>
+            */}
           </div>
         </div>
       )}
