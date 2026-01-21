@@ -21,14 +21,6 @@ interface Job {
 }
 
 
-const images = [
-  "/hero/hero1.jpg",
-  "/hero/hero2.jpg",
-  "/hero/hero3.jpg",
-];
-
-
-
 export default function Home() {
   return (
 <main className="bg-slate-50">
